@@ -2,9 +2,9 @@ package com.example.task7ya.ex01;
 
 public abstract class Employee
 {
-    final int employeeId;
-    String name;
-    double baseSalary;
+    private final int employeeId;
+    private String name;
+    private double baseSalary;
     public abstract double calculateMonthlySalary();
 
     public double getBaseSalary() {

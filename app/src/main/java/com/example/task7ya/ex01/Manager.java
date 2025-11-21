@@ -2,8 +2,8 @@ package com.example.task7ya.ex01;
 
 class Manager extends Employee implements BonusEligible
 {
-    String department;
-    double managementBonusPercentage;
+    private String department;
+    private double managementBonusPercentage;
 
     public Manager(int employeeId, String name, double baseSalary,String department,double managementBonusPercentage)
     {
@@ -15,7 +15,7 @@ class Manager extends Employee implements BonusEligible
     @Override
     public double calculateBonus()
     {
-        double answer = this.baseSalary * this.managementBonusPercentage;
+        double answer = this.getBaseSalary() * this.managementBonusPercentage;
         return answer;
     }
 
