@@ -4,14 +4,14 @@ public abstract class Employee
 {
     final int employeeId;
     String name;
-    int baseSalary;
+    double baseSalary;
     public abstract double calculateMonthlySalary();
 
-    public int getBaseSalary() {
+    public double getBaseSalary() {
         return baseSalary;
     }
 
-    public void setBaseSalary(int baseSalary) {
+    public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
     }
 
@@ -23,17 +23,16 @@ public abstract class Employee
         this.name = name;
     }
 
-    public int getEmployeeId() {
+    public int getEmployeeId()
+    {
         return employeeId;
     }
 
-    public Employee(final int employeeId, String name, int baseSalary )
+    public Employee(final int employeeId, String name, double baseSalary )
     {
         this.baseSalary = baseSalary;
         this.name=name;
         this.employeeId=employeeId;
-
-
     }
 
     @Override
@@ -44,5 +43,4 @@ public abstract class Employee
                 "Name: " + name + "\n" +
                 "Base Salary: " + baseSalary;
     }
-
 }
