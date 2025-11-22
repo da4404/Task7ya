@@ -26,5 +26,13 @@ public class Salesperson extends Employee implements BonusEligible
         return answer;
     }
 
+    @Override
+    public String toString() {
+        return "Salesperson:\n" +
+                super.toString() + "\n" +
+                "Total Sales: " + totalSales + "\n" +
+                "Sales Commission: " + salesCommission;
+    }
+
 
 }

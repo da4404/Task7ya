@@ -11,17 +11,11 @@ public abstract class Employee
         return baseSalary;
     }
 
-    public void setBaseSalary(double baseSalary) {
-        this.baseSalary = baseSalary;
-    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getEmployeeId()
     {
@@ -38,9 +32,8 @@ public abstract class Employee
     @Override
     public String toString()
     {
-        return "Employee Details:\n" +
-                "ID: " + employeeId + "\n" +
-                "Name: " + name + "\n" +
-                "Base Salary: " + baseSalary;
+        return "ID: " + employeeId +
+                ", Name: " + name +
+                ", Base Salary: " + baseSalary;
     }
 }
